@@ -26,6 +26,6 @@ public class EmailSender implements Sender {
 
     /* Use System.out to graphically distinguish sending from logging */
     System.out.printf("[Email] Message sent, title= '%s', bodyMD5= '%s', recipient= '%s'%n",
-        message.getMessageTitle(), bodyMD5, anonymizedRecipientAddress);
+            message.getMessageTitle(), bodyMD5, anonymizedRecipientAddress);
   }
 }

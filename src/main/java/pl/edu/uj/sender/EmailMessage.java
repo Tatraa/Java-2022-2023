@@ -21,6 +21,7 @@ public class EmailMessage extends Message {
   public String getMessageBody() {
     return messageBody;
   }
+
   @Override
   void validateMessage() throws SenderException {
     if((StringUtils.isNullOrEmpty(messageTitle)) || (StringUtils.isNullOrEmpty(messageBody)))

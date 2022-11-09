@@ -2,10 +2,10 @@ package pl.edu.uj.sender;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 public class PushRecipient extends Recipient {
   private final String recipientAddress;
   private static final Pattern AdressPattern = Pattern.compile("^[a-zA-Z0-9]*$", Pattern.CASE_INSENSITIVE);
-
 
   public PushRecipient(String recipientAddress) {
     this.recipientAddress = recipientAddress;
